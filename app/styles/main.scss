@@ -1,0 +1,328 @@
+// bower:scss
+// endbower
+
+body {
+    font-family: "Open Sans", "Ubuntu", "Swanky and Moo Moo", Arial, sans-serif;
+    color: #333333;
+    margin: 0 auto;
+    background-color: #151515;
+}
+
+.top-header {
+    height: 45px;
+    width: 100%;
+    padding-left: 12px;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #000000 0%, #252525 100%);
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #444444;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.selfiehut {
+    float: left;
+    padding-top: 24px;
+    color: #eeeeee;
+    text-shadow: 0px 0px 4px #000000;
+    font-family: "Ubuntu";
+    letter-spacing: 1px;
+    line-height: 1px;
+}
+
+.button {
+    padding: 0;
+    width: 70px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 0px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #EEEEEE 0%, #999999 100%);
+}
+
+.button:hover {
+    box-shadow: 0px 0px 6px #555555;
+}
+
+.login {
+    float: right;
+    margin-top: 7px;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-right: 20px;
+    height: 30px;
+    width: 90px;
+    line-height: 30px;
+    color: #f5f5f5;
+    border: 1px solid #000000;
+    background-image: linear-gradient(to bottom, #444444 0%, #333333 100%);
+}
+.login:hover {
+    box-shadow: 0px 0px 6px #353535;
+}
+
+.search-container {
+    margin: 10px auto 0 auto;
+    width: 72%; 
+    height: 63px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 7px #353535;
+    background-image: linear-gradient(to bottom, #151515 0%, #000000 100%);
+}
+
+.go {
+    float: right;
+    margin-right: 18px;
+    margin-top: 9px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    color: #f5f5f5;
+    border: 1px solid #000000;
+    background-image: linear-gradient(to bottom, #444444 0%, #333333 100%);
+}
+
+.field {
+    float: right;
+    height: 24px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #EEEEEE 0%, #999999 100%);
+    border: 1px solid #353535;
+    color: #151515;
+    display: block;
+}
+
+input::-webkit-input-placeholder {
+   color: #151515;
+   padding-left: 4px;
+}
+
+.upload-container {
+    margin: 10px auto 0 auto;
+    width: 72%; 
+    height: 63px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 7px #353535;
+    background-image: linear-gradient(to bottom, #151515 0%, #000000 100%);
+}
+.one {
+    float: right;
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 92%;
+}
+.two { 
+    width: 49%;
+    float: left;
+}
+.three {
+    width: 49%;
+    float: right;
+}
+
+.upload {
+    float:right;
+    display: block;
+    margin-top: 3px;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    color: #f5f5f5;
+    border: 1px solid #000000;
+    background-image: linear-gradient(to bottom, #444444 0%, #333333 100%);
+}
+
+.image-container {
+    margin: 18px auto 0 auto;
+    width: 72%;
+    background-color: #151515;
+    position: relative;
+    font-family: "Ubuntu";
+    border-top: 1px solid #212121;
+    border-left: 1px solid #212121;
+    border-right: 1px solid #212121;
+    box-shadow: 0px 0px 4px #000000;
+}
+
+.image-container:hover {
+    .image-leftbox {
+        height: auto;
+        min-height: 30px;
+        opacity: 0.5;
+        visibility: visible;
+    }
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.image-topbox {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.image-box {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.image-username a {
+    position: absolute;
+    left: 87px;
+    top: 8px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.follow {
+    position: absolute;
+    left: 87px;
+    top: 33px;
+    color: #252525;
+}
+
+.image-leftbox {
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    text-align: left;
+    color: #ffffff;
+    background: black;
+    width: 82%;
+    float: left;
+    opacity: 0.0;
+    height: 0px;
+    visibility: hidden;
+}
+
+.image-rightbox {
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+    text-align: right;
+    color: #ffffff;
+    background: black;
+    opacity: 0.5;
+    width: 18%;
+    height: 30px;
+    float: left;
+}
+
+.box {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+
+.box img {
+    margin-bottom: -1px; 
+}
+
+.starred {
+    padding-right: 2px;
+}
+
+.comment {
+    border-left: 1px solid #454545;
+    padding-left: 6px; 
+}
+
+.comments {
+    padding-right: 2px;
+}
+
+.share {
+    border-left: 1px solid #454545;
+    padding-left: 8px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .image-rightbox {
+        width: 0%;
+    }
+     .image-leftbox {
+        width: 100%;
+    }
+    .star {
+        padding-right: 2px;
+        position: absolute;
+        bottom: 52px;
+        right: -26px;
+    }
+    .starred {
+        padding-right: 2px;
+        position: absolute;
+        bottom: 55px;
+        right: -43px;
+    }
+    .comment {
+        border-left: 0px solid #454545;
+        padding-left: 6px;
+        position: absolute;
+        bottom: 25px;
+        right: -27px;
+    }
+    .comments {
+        padding-right: 2px;
+        position: absolute;
+        bottom: 31px;
+        right: -44px;
+    }
+    .share {
+        border-left: 0px solid #454545;
+        padding-left: 8px;
+        position: absolute;
+        bottom: 2px;
+        right: -25px;
+    }
+}
+/* media query dude 1300px */
+
+@media screen and (max-width:600px) {
+
+    .image-container {
+        width: 54%;
+    }
+    .image-topbox {
+        position: absolute;
+        left: -86px;
+        top: -7px;
+        width: 
+    }
+
+    .image-username a {
+       opacity: 0;
+    }
+
+    .follow {
+        position: absolute;
+        left: 9px;
+        top: 83px;
+        color: #252525;
+    }
+
+    .image-leftbox {
+   font-size: 12px;
+}
+
+
+}
+/* media query dude 830px */
