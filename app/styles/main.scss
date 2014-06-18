@@ -10,7 +10,7 @@ body {
 .top-header {
     height: 46px;
     width: 100%;
-    padding-left: 12px;
+    padding-left: 2px;
     font-size: 35px;
     line-height: 46px;
     text-align: left;
@@ -28,6 +28,13 @@ body {
     // background-image: linear-gradient(to right, #151515 0%, #000000 100%);
     color: #ffffff;
     // background-color: #000000;
+}
+.logo {
+    float: left;
+    margin-top: 3px;
+    margin-right: 1px;
+    height: 45px;
+    width: 45px;
 }
 
 .selfiehut {
@@ -90,7 +97,7 @@ body {
 }
 .go {
     float: right;
-    margin-right: 24px;
+    margin-right: 12px;
     margin-top: 9px;
     width: 28px;
     height: 28px;
@@ -145,7 +152,7 @@ input::-webkit-input-placeholder {
     margin-top: 10px;
     margin-left: 6px;
     margin-right: 2px;
-    width: 125px;
+    width: 220px;
 }
 .two {
     width: 99%;
@@ -274,6 +281,9 @@ input::-webkit-input-placeholder {
 @media screen and (max-width:600px) {
     .upload-container {
         width: 90%;
+    }
+    .one {
+        width: 90px;
     }
     .image-container {
         width: 54%;
