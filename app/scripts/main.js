@@ -22,3 +22,66 @@ var fido = new Animal;
 		.fail( function(object, error) {
 	})
 
+
+
+
+
+// ============================================
+// ================Router======================
+console.log("Router Loaded")
+AppRouter = Backbone.Router.extend({
+	routes: {
+		"home": "splashPage",
+		"index": "anotherPage"
+	},
+
+	initialize: function(){
+		this.coolDogs = new PostCollection();
+	},
+
+	splashPage: function(){
+		new splashPageView();
+	}
+
+})
+
+var Router = new AppRouter();
+Backbone.history.start();
+
+
+
+
+// ============================================
+// =================Views======================
+console.log("View Loaded")
+AppModel = Backbone.Model.extend({
+
+})
+
+
+
+
+
+
+
+// ============================================
+// ===========Models and Collections===========
+console.log("Model Loaded")
+AppModel = Backbone.Model.extend({
+	defaults: {
+		"photo": "None",
+		"title": "None"
+	}
+
+	initialize: function(){
+		
+	}
+
+})
+
+
+
+console.log("Collection Loaded")
+AppCollection = Backbone.Collection.extend({
+
+})

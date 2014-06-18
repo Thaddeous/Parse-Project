@@ -8,23 +8,23 @@ body {
     background-color: #151515;
 }
 .top-header {
-    height: 46px;
+    height: 50px;
     width: 100%;
     padding-left: 2px;
+    padding-top: 3px;
     font-size: 40px;
-    line-height: 46px;
+    line-height: 50px;
     text-align: left;
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #000000 0%, #252525 100%);
+    background-image: linear-gradient(to bottom, #000000 0%, #191919 100%);
     border-bottom: 1px solid #000000;
     border-right: 1px solid #444444;
-    box-shadow: 0px 0px 5px #000000;
+    box-shadow: 0px 0px 7px #000000;
 }
 .bottom-header {
     margin-top: 2px;
     height: 38px;
     width: 100%;
-    // background-image: linear-gradient(to bottom, #212121 0%, #151515 100%);
     background-image: linear-gradient(to right, #151515 0%, #090909 100%);
     color: #ffffff;
 }
@@ -245,7 +245,7 @@ input::-webkit-input-placeholder {
     background: black;
     opacity: 0.5;
     width: 144px;
-    height: 30px;
+    height: 32px;
     float: left;
 }
 .box {
@@ -273,7 +273,7 @@ input::-webkit-input-placeholder {
 }
 @media screen and (max-width:600px) {
     .bottom-header {
-        height: 36px;
+        height: 38px;
     }
     .upload-container {
         width: 90%;
