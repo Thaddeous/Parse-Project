@@ -22,10 +22,10 @@ body {
     box-shadow: 0px 0px 7px #000000;
 }
 .bottom-header {
-    margin-top: 2px;    
+    margin-top: 2px;
     height: 38px;
     width: 100%;
-    background-image: linear-gradient(to right, #151515 0%, #090909 100%);
+    // background-image: linear-gradient(to right, #151515 0%, #090909 100%);
     color: #ffffff;
 }
 .logo {
@@ -109,69 +109,73 @@ body {
     border: 1px solid #353535;
     color: #151515;
 }
-input::-webkit-input-placeholder {
-    color: #151515;
-}
-.upload-main {
-    text-align: center;
-}
-.upload-container {
-    display: inline-block;
-    margin: 7px auto 0 auto;
-    margin-bottom: -3px;
-    width: 72%;
-    padding: 10px;
-    border-radius: 6px;
-    box-shadow: inset 0px 0px 7px #353535;
-    background-image: linear-gradient(to bottom, #151515 0%, #111111 100%);
-}
-.left-upload {
-    float: left;
-    width: 30%;
-}
-.right-upload {
-    float: right;
-    width: 68%;
-    min-height: 200px;
-    height: auto;
-    border-radius: 6px;
-    background-color: #090909;
-    box-shadow: inset 0px 0px 7px #000000;
-}
-.about {
-    padding: 10px;
-}
-.one {
+.search-field {
     float: right;
     margin-top: 10px;
     margin-left: 6px;
     margin-right: 2px;
     width: 220px;
 }
-.two {
-    width: 98%;
+input::-webkit-input-placeholder {
+    color: #151515;
 }
-.three {
-    margin-top: 3px;
-    width: 98%;
+.upload-main {
+    text-align: center;
+    margin-bottom: 50px;
+    display: none;
+    &.activated {
+        display: inherit;
+    }
+}
+.upload-container {
+    margin: 7px auto 0 auto;
+    width: 72%;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 7px #353535;
+    background-image: linear-gradient(to bottom, #151515 0%, #111111 100%);
+}
+.upload-box {
+    padding: 10px;
+}
+.file-uploader {
+    float: left;
+    margin-left: -1px;
+    color: #00A18D;
+}
+.caption-field {
+    float: left;
+    width: 70%;
+}
+textarea::-webkit-input-placeholder {
+    color: #151515;
 }
 .file-upload {
-    margin-top: 3px;
-    width: 100%;
-    height: 26px;
-    line-height: 26px;
+    float: right;
+    width: 28%;
+    height: 29px;
+    line-height: 29px;
     color: #f5f5f5;
     border: 1px solid #000000;
     background-image: linear-gradient(to bottom, #444444 0%, #333333 100%);
+    font-size: 13px;
 }
-
+.spacer {
+    clear: both;
+}
+.spacer2 {
+    margin-bottom: 30px;
+}
 .main-photo-block {
     margin-bottom: 25px;
     margin-top: 10px;
+    display: inherit;
+    &.activated {
+        display: none;
+    }
 }
 .image-container {
     clear: both;
-    margin:0 auto;
+    margin: 0 auto;
     width: 72%;
     background-color: #151515;
     position: relative;
@@ -277,7 +281,7 @@ input::-webkit-input-placeholder {
     padding-left: 8px;
 }
 .comments-container {
-    margin:0 auto;
+    margin: 0 auto;
     width: 72%;
     background-color: #151515;
     font-family: "Ubuntu";
@@ -312,7 +316,6 @@ input::-webkit-input-placeholder {
 }
 .comments-username a {
     text-decoration: none;
-
 }
 .comments-username p {
     padding: 0;
@@ -320,14 +323,13 @@ input::-webkit-input-placeholder {
     margin-bottom: 0px;
     color: #00A18D;
 }
-
 .comments-text {
     font-size: 15px;
     color: #888888;
     margin-top: 5px;
 }
 .comment-container {
-    margin:0 auto;
+    margin: 0 auto;
     width: 72%;
     background-color: #151515;
     font-family: "Ubuntu";
@@ -341,7 +343,7 @@ input::-webkit-input-placeholder {
     margin-top: 5px;
     margin-bottom: 7px;
 }
-.comment-field{
+.comment-field {
     text-align: center;
     margin-top: -10px;
     padding: 10px;
@@ -349,7 +351,7 @@ input::-webkit-input-placeholder {
 .four {
     width: 83%;
 }
-.comment-button {  
+.comment-button {
     display: inline-block;
     margin-top: 9px;
     width: 14%;
@@ -359,22 +361,24 @@ input::-webkit-input-placeholder {
     border: 1px solid #000000;
     background-image: linear-gradient(to bottom, #444444 0%, #333333 100%);
 }
-
-
-
-
 @media screen and (max-width:700px) {
     .bottom-header {
         height: 38px;
     }
     .upload-container {
+        float: left;
+        margin-left: 6px;
+        margin-bottom: 10px;
         width: 90%;
     }
-    .one {
+    .search-field {
         width: 90px;
     }
+    .caption-field {
+        width: 71%;
+    }
     .file-upload {
-        margin-left: 1px;
+        width: 25%;
     }
     .image-container {
         width: 54%;
@@ -434,9 +438,9 @@ input::-webkit-input-placeholder {
         display: block;
         font-size: 14px;
     }
-} /* media query dude 700px */
+}
 
-
+/* media query dude 700px */
 @media screen and (max-width:700px) {
     .image-leftbox {
         display: none;
@@ -446,5 +450,7 @@ input::-webkit-input-placeholder {
     }
     .comment-container {
         display: none;
-    } /* media query dude 700px */
+    }
+    
+    /* media query dude 700px */
 }
