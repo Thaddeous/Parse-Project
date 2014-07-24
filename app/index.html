@@ -23,24 +23,24 @@
 /_/  /_/\_,_/_/_//_/ /_//_/ /_/ /_/  /_/____/
 -->
         <body>
-            <div class="header-padding"></div>
-            <div class="top-header">
-                <div class="logo"><a href=""><img src="/images/logo.png" width="100%"></a></div>
-                <a href=""><div class="pictastic"><strong>Pictastic</strong></div></a>
-                <div class="go button">Go</div>
-                <input class="field search-field" type="text" placeholder="Search" name="user">
-            </div>
-            
-            <div class="bottom-header">
-                <div class="button login">Log In</div>
-                <div class="settings add-image"><a href="#"><img src="/images/settings.png" width="100%"></a></div>
-                <div class="plus add-image"><a href="#"><img src="/images/plus.png" width="100%"></a></div>
-            </div>
+        <div class="header-padding"></div>
+        <div class="top-header">
+            <div class="logo"><a href=""><img src="images/logo.png" width="100%"></a></div>
+            <a href=""><div class="pictastic"><strong>Pictastic</strong></div></a>
+            <div class="go button">Go</div>
+            <input class="field search-field" type="text" placeholder="Search" name="user">
+        </div>
+        
+        <div class="bottom-header">
+            <div class="button login">Log In</div>
+            <div class="settings add-image"><a href="#"><img src="images/settings.png" width="100%"></a></div>
+            <div class="plus add-image"><a href="#"><img src="images/plus.png" width="100%"></a></div>
+        </div>
 
-            <div class="upload-main"></div>
-            <!-- upload screen div -->
-            <div class="main-photo-block"></div>
-            <!-- main images div -->
+        <div class="upload-main"></div>
+        <!-- upload screen div -->
+        <div class="main-photo-block"></div>
+        <!-- main images div -->
 <!-- 
    ____        _      __    
   / __/_______(_)__  / /____
@@ -53,7 +53,7 @@
 \____/ .__/_/\___/\_,_/\_,_/ /___/\__/_/  \__/\__/_//_/ 
     /_/                                                
 -->
-            <script type="text/template" class="upload-template">
+        <script type="text/template" class="upload-template">
             <div class="upload-container">
                 <div class="upload-box">
                     <input class="file-uploader" type="file" name="img">
@@ -63,7 +63,7 @@
                     <div class="spacer"></div>
                 </div>
             </div>
-            </script>
+        </script>
 <!--    
    __  ___     _        ____                      
   /  |/  /__ _(_)__    /  _/_ _  ___ ____ ____ ___
@@ -71,7 +71,7 @@
 /_/  /_/\_,_/_/_//_/ /___/_/_/_/\_,_/\_, /\__/___/
                                     /___/          
 -->
-            <script type="text/template" class="photo-instance-template">
+        <script type="text/template" class="photo-instance-template">
             <div class="spacer2">
                 <div class="image-container">
                     <div class="image-full">
@@ -91,11 +91,11 @@
                     </div>
                     <div class="image-rightbox">
                         <div class="container right">
-                            <div class="star box"><a href="#"><img src="/images/star.png" height="18"></a></div>
+                            <div class="star box"><a href="#"><img src="images/star.png" height="18"></a></div>
                             <div class="starred box">14</div>
-                            <div class="comment box"><a href="#"><img src="/images/comment.png" height="18"></a></div>
+                            <div class="comment box"><a href="#"><img src="images/comment.png" height="18"></a></div>
                             <div class="comments box">78</div>
-                            <div class="share box"><a href="#"><img src="/images/share.png" height="20"></a></div>
+                            <div class="share box"><a href="#"><img src="images/share.png" height="20"></a></div>
                         </div>
                     </div>
                     <div class="image-leftbox">
@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            </script>
+        </script>
 <!-- 
    ____        _      __        ____        __
   / __/_______(_)__  / /____   / __/__  ___/ /
@@ -133,27 +133,27 @@
 /___/\__/_/ /_/ .__/\__/___/ /___/_//_/\_,_/  
              /_/                         
 -->
-            <!-- build:js scripts/vendor.js -->
-            <!-- bower:js -->
-            <script src="../bower_components/jquery/dist/jquery.js"></script>
-            <script src="../bower_components/underscore/underscore.js"></script>
-            <!-- endbower -->
-            <!-- endbuild -->
-            <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
-            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-            <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-            </script>
-            <!-- build:js({app,.tmp}) scripts/main.js -->
-            <script src="scripts/model.js"></script>
-            <script src="scripts/views.js"></script>
-            <script src="scripts/main.js"></script>
-            <script src="scripts/router.js"></script>
-            <!-- endbuild -->
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/model.js"></script>
+        <script src="scripts/views.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/router.js"></script>
+        <!-- endbuild -->
         </body>
     </html>
