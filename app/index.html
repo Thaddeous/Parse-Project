@@ -11,15 +11,16 @@
         <!-- bower:css -->
         <!-- endbower -->
         <!-- endbuild -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <!-- build:css(.tmp) styles/main.css -->
-        <link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo|Ubuntu|Open+Sans|Oxygen' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="styles/main.css">
-            <!-- endbuild -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
         </head>
         <body>
+            <div class="header-padding"></div>
             <div class="top-header">
-                <div class="logo"><a href="#"><img src="/images/logo.png" width="100%"></a></div>
-                <div class="pictastic"><strong>Pictastic</strong></div>
+                <div class="logo"><a href=""><img src="/images/logo.png" width="100%"></a></div>
+                <a href=""><div class="pictastic"><strong>Pictastic</strong></div></a>
                 <div class="go button">Go</div>
                 <input class="field search-field" type="text" placeholder="Search" name="user">
             </div>
@@ -50,7 +51,7 @@
                         <a href="#"><img src=" <%=file.url() %> " width="100%"></a>
                     </div>
                     <div class="image-topbox">
-                        <div class="top container">
+                        <div class="container">
                             <div class="image-box">
                                 <a href="#"><img src="http://www.inewmedia.org/wp-content/uploads/2014/05/501ffaae9b1a0477f75898926fe0708c.jpg" width="100%"></a>
                             </div>
@@ -62,7 +63,7 @@
                         </div>
                     </div>
                     <div class="image-rightbox">
-                        <div class="right container">
+                        <div class="container right">
                             <div class="star box"><a href="#"><img src="/images/star.png" height="18"></a></div>
                             <div class="starred box">14</div>
                             <div class="comment box"><a href="#"><img src="/images/comment.png" height="18"></a></div>
@@ -71,7 +72,7 @@
                         </div>
                     </div>
                     <div class="image-leftbox">
-                        <div class="left container"> <%= caption %> </div>
+                        <div class="container"> <%= caption %> </div>
                     </div>
                 </div>
                 <div class="comments-container">

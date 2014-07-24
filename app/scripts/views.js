@@ -106,12 +106,11 @@ var UploadView = Parse.View.extend({
 
 function previewImage (input) {
 
-
-		var reader = new FileReader();
-		reader.onload = function(e) {
-			var picture = e.target.result;
-			$('.placeholder').attr('src', picture);
-		};
-		reader.readAsDataURL(input.files[0]);
+	var reader = new FileReader();
+	reader.onload = function(e) {
+		var picture = e.target.result;
+		$('.placeholder').attr('src', picture);
+	};
+	reader.readAsDataURL(input.files[0]);
 				
 }
