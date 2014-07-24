@@ -1,5 +1,10 @@
 'use strict';
-
+//    __  ___     _        ____                      
+//   /  |/  /__ _(_)__    /  _/_ _  ___ ____ ____ ___
+//  / /|_/ / _ `/ / _ \  _/ //  ' \/ _ `/ _ `/ -_|_-<
+// /_/  /_/\_,_/_/_//_/ /___/_/_/_/\_,_/\_, /\__/___/
+//                                     /___/   
+//
 var PhotoInstanceView = Parse.View.extend({
 	className: "photo-Instance-View",
 	template: _.template($(".photo-instance-template").text()),
@@ -18,8 +23,6 @@ var PhotoInstanceView = Parse.View.extend({
 	}
 })
 
-
-
 var AppView = Parse.View.extend({
 	className: "app-View",
 	events: {
@@ -29,17 +32,18 @@ var AppView = Parse.View.extend({
 		$(".main-photo-block").append(this.el)
 		this.collection = new Photos()
 		this.collection.on('add', function (photoModel) {
-
 			new PhotoInstanceView({ model: photoModel })
 		})
 		this.collection.fetch({add:true});
-		
 	},
-
 })
 
-
-
+//   __  __     __             __  ____                   
+//  / / / /__  / /__  ___ ____/ / / __/__________ ___ ___ 
+// / /_/ / _ \/ / _ \/ _ `/ _  / _\ \/ __/ __/ -_) -_) _ \
+// \____/ .__/_/\___/\_,_/\_,_/ /___/\__/_/  \__/\__/_//_/ 
+//     /_/ 
+//
 var UploadView = Parse.View.extend({
 	className: "upload-View",
 	template: _.template($(".upload-template").text()),
@@ -75,26 +79,20 @@ var UploadView = Parse.View.extend({
 			console.log(that.$el)
 			var words = that.$el.find(".caption-field").val();
 			image.set("caption", words);
-			// image.set("username", "none"); // undefined
 			image.set("file", parseFile);
 			image.save();
 			appView.collection.add(image);
-
 			uploadView.remove();
 			$(".upload-main").removeClass("activated");
 			$(".main-photo-block").removeClass("activated");
 
-			
-
 		}, function(error) {
 			console.log("Something went wrong in the upload process dude.");
 		});
-
 	},
 
 	placeholder: function(){
 		var profilePhoto = Photo.get("file");
-
 		$(".placeholder").attr('src', profilePhoto.url())
 	},
 
@@ -105,12 +103,10 @@ var UploadView = Parse.View.extend({
 })
 
 function previewImage (input) {
-
 	var reader = new FileReader();
 	reader.onload = function(e) {
 		var picture = e.target.result;
 		$('.placeholder').attr('src', picture);
 	};
 	reader.readAsDataURL(input.files[0]);
-				
 }
