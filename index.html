@@ -1,0 +1,94 @@
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>Pictastic</title><meta name=description content=""><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href=/6df2b309.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link href="http://fonts.googleapis.com/css?family=Open+Sans" rel=stylesheet type=text/css><link rel=stylesheet href=styles/1c91185a.main.css><!--    
+   __  ___     _        __ __________  _____ 
+  /  |/  /__ _(_)__    / // /_  __/  |/  / / 
+ / /|_/ / _ `/ / _ \  / _  / / / / /|_/ / /__
+/_/  /_/\_,_/_/_//_/ /_//_/ /_/ /_/  /_/____/
+--><body><div class=header-padding></div><div class=top-header><div class=logo><a href=""><img src=images/20a3b4ba.logo.png width=100%></a></div><a href=""><div class=pictastic><strong>Pictastic</strong></div></a><div class="go button">Go</div><input class="field search-field" placeholder=Search name=user></div><div class=bottom-header><div class="button login">Log In</div><div class="settings add-image"><a href=#><img src=images/9ae88ef9.settings.png width=100%></a></div><div class="plus add-image"><a href=#><img src=images/63e4f38f.plus.png width=100%></a></div></div><div class=upload-main></div><!-- upload screen div --><div class=main-photo-block></div><!-- main images div --><!-- 
+   ____        _      __    
+  / __/_______(_)__  / /____
+ _\ \/ __/ __/ / _ \/ __(_-<
+/___/\__/_/ /_/ .__/\__/___/
+             /_/            
+  __  __     __             __  ____                   
+ / / / /__  / /__  ___ ____/ / / __/__________ ___ ___ 
+/ /_/ / _ \/ / _ \/ _ `/ _  / _\ \/ __/ __/ -_) -_) _ \
+\____/ .__/_/\___/\_,_/\_,_/ /___/\__/_/  \__/\__/_//_/ 
+    /_/                                                
+--><script type=text/template class=upload-template><div class="upload-container">
+                <div class="upload-box">
+                    <input class="file-uploader" type="file" name="img">
+                    <img class="placeholder" src="http://placehold.it/1020x400&text=image+placeholder" width="100%">
+                    <textarea class="field caption-field" placeholder="Description..."></textarea>
+                    <div class="file-upload button">Upload</div>
+                    <div class="spacer"></div>
+                </div>
+            </div></script><!--    
+   __  ___     _        ____                      
+  /  |/  /__ _(_)__    /  _/_ _  ___ ____ ____ ___
+ / /|_/ / _ `/ / _ \  _/ //  ' \/ _ `/ _ `/ -_|_-<
+/_/  /_/\_,_/_/_//_/ /___/_/_/_/\_,_/\_, /\__/___/
+                                    /___/          
+--><script type=text/template class=photo-instance-template><div class="spacer2">
+                <div class="image-container">
+                    <div class="image-full">
+                        <a href="#"><img src=" <%=file.url() %> " width="100%"></a>
+                    </div>
+                    <div class="image-topbox">
+                        <div class="container">
+                            <div class="image-box">
+                                <a href="#"><img src="http://www.inewmedia.org/wp-content/uploads/2014/05/501ffaae9b1a0477f75898926fe0708c.jpg" width="100%"></a>
+                            </div>
+                            <div class="image-username">
+                                <a href="#"> <%=username%> </a>
+                                <p> <%= this.model.createdAt %> </p>
+                                <div class="follow button">Follow</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-rightbox">
+                        <div class="container right">
+                            <div class="star box"><a href="#"><img src="images/01163b2c.star.png" height="18"></a></div>
+                            <div class="starred box">14</div>
+                            <div class="comment box"><a href="#"><img src="images/a2b1a808.comment.png" height="18"></a></div>
+                            <div class="comments box">78</div>
+                            <div class="share box"><a href="#"><img src="images/81506348.share.png" height="20"></a></div>
+                        </div>
+                    </div>
+                    <div class="image-leftbox">
+                        <div class="container"> <%= caption %> </div>
+                    </div>
+                </div>
+                <div class="comments-container">
+                    <div class="comments-field">
+                        <div class="comments-info-container">
+                            <div class="comments-pic-container">
+                                <div class="comments-pic"><a href="#"><img src="http://computableplant.ics.uci.edu/theses/guy/Guy%20Yosiphon_files/guy2.JPG" width="40" height="40"></a></div>
+                            </div>
+                            <div class="comments-username">
+                                <a href="#">Username</a>
+                                <p> <%= this.model.createdAt %> </p>
+                            </div>
+                        </div>
+                        <div class="comments-text-container">
+                            <div class="comments-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <div class="comment-field">
+                        <input class="field four" type="text" placeholder="Write a Comment" name="user">
+                        <div class="comment-button button">Post</div>
+                    </div>
+                </div>
+            </div></script><!-- 
+   ____        _      __        ____        __
+  / __/_______(_)__  / /____   / __/__  ___/ /
+ _\ \/ __/ __/ / _ \/ __(_-<  / _// _ \/ _  / 
+/___/\__/_/ /_/ .__/\__/___/ /___/_//_/\_,_/  
+             /_/                         
+--><script src=scripts/f51f348e.vendor.js></script><script src=//www.parsecdn.com/js/parse-1.2.18.min.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src=scripts/7c5735ac.main.js></script>
